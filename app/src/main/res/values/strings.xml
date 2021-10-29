@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BankApp</string>
+    <string name="set_up">First of the few steps to set you up with a Bank Account</string>
+    <string name="alphanumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="disclaimer">Providing PAN &amp; Date of Birth helps us find and fetch your KYC from a central registry by the Government of India. <a href="https://www.linkedin.com/in/harshit-jain101/">Learn more</a></string>
+    <string name="no_pan">I don\'t have a PAN</string>
+</resources>

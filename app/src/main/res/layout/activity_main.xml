@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_up"
+            android:textSize="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginBottom="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAN NUMBER"
+
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pan_number"
+            android:inputType="textCapCharacters"
+            android:digits="@string/alphanumeric"
+            android:maxLength="10"
+            android:layout_marginTop="10dp"
+            android:hint="ABCDE0123F"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="BIRTHDATE"
+            android:fontFamily="serif-monospace"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/birth_date"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:layout_marginTop="10dp"
+            android:hint="31/12/99"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer"
+            android:layout_marginTop="140dp"
+            android:id="@+id/disclaimer"
+            android:linksClickable="true"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:layout_marginTop="20dp"
+            android:id="@+id/nxt_btn"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/no_pan"
+            android:id="@+id/no_pan"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
